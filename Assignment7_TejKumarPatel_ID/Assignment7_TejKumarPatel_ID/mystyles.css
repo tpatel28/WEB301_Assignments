@@ -1,0 +1,91 @@
+/*
+Name : Tejkumar Patel
+Assignment : Assignment 7
+Course : Mobile Application development
+File :mystyles.css
+Date : 7th november 2023
+*/
+
+/* function styles*/
+
+.swiper-container {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+    background-color: #4287f5;
+}
+
+.swiper-slide {
+    text-align: center;
+    padding: 20px;
+    background-color: #121212;
+    border: 1px solid #777;
+    color: #fff;
+    font-size: 19px;
+}
+
+/* body styles*/
+body {
+    background-color: #ff8c42;
+    font-size: 22px;
+}
+
+h1 {
+    font-size: 30px;
+    color: #27ae60;
+    text-align: center;
+}
+
+label,
+textarea {
+    font-size: 18px;
+    color: #f0d74c;
+}
+
+form {
+    background-color: #65b66e;
+}
+
+h2 {
+    font-size: 24px;
+    color: #f08291;
+}
+
+/* media query */
+@media screen and (max-width: 600px) {
+    body {
+        background-color: #7bdff0;
+    }
+
+    form {
+        background-color: #7bdff0;
+    }
+
+    h1 {
+        font-size: 34px;
+        color: #3350f2;
+    }
+
+    label {
+        display: block;
+        font-size: 24px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    textarea {
+        font-size: 24px;
+        width: 100%;
+    }
+
+    fieldset {
+        width: 100%;
+        height: auto;
+    }
+}
