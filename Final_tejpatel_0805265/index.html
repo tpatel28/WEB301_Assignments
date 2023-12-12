@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tej's Banking Website</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        .desktop-bg { background-color: #ddd0b8; } 
+        .mobile-bg { background-color: #e9ecef; } 
+
+        @media (max-width: 576px) { 
+            body { background-color: #af9eef; } 
+        }
+
+        .swiper-button-next, .swiper-button-prev {
+            color: #6cc98a;
+        }
+    </style>
+</head>
+<body class="desktop-bg">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <i class="fa fa-bank"></i> Tej Bank
+        </a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                
+                <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <div class="container mt-4">
+        <h2 class="text-center text-primary">tej Bank</h2>
+    </div>
+
+    
+    <div class="container mt-4">
+        <div class="row">
+     
+            <div class="col-md-4">
+                <figure class="text-center">
+                    <img src="saving.jpeg" class="img-fluid" alt="">
+                    <figcaption class="figure-caption">Savings Account</figcaption>
+                </figure>
+
+
+                <button type="button" class="btn btn-primary" data-toggle="popover" data-trigger="focus" title="Savings Account" data-content="A savings account offers interest on your deposits.">Learn More</button>
+            </div>
+
+   
+            <div class="col-md-4">
+                <figure class="text-center">
+                    <img src="cheching.png" class="img-fluid" alt="">
+                    <figcaption class="figure-caption">Checking Account</figcaption>
+                </figure>
+                <button type="button" class="btn btn-primary" data-toggle="popover" data-trigger="focus" title="Checking Account" data-content="A checking account for everyday transactions.">more info</button>
+            </div>
+
+           
+            <div class="col-md-4">
+                <figure class="text-center">
+
+                    <img src="Business.jpeg" class="img-fluid" alt="">
+                    <figcaption class="figure-caption">Business Account</figcaption>
+                </figure>
+                <button type="button" class="btn btn-primary" data-toggle="popover" data-trigger="focus" title="Business Account" data-content="A business account designed for business needs.">Detailss</button>
+            </div>
+        </div>
+    </div>
+
+   
+
+    <div class="container mt-4">
+
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+
+               
+                <div class="swiper-slide">
+                    <h3>Home Loan Information</h3>
+                    <p>you would like to buy a new home. We have some new details about it</p>
+                </div>
+              
+                <div class="swiper-slide">
+                    <h3>Car Loan Information</h3>
+                    <p>We have used and new cars so which one do you like ?</p>
+                </div>
+            </div>
+           
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+
+        </div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover();
+
+
+            var swiper = new Swiper('.swiper-container', {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        });
+    </script>
+</body>
+</html>
